@@ -1,20 +1,5 @@
 import requests
-
-url = "https://jsonplaceholder.typicode.com/posts/"
-
-payload = {"id":[1,2,3],"userId":1}
-
-response = requests.get(url, params=payload)
-
-response_json = response.json()
-
-#status = response.status_code
-for i in response_json:
-    print(i, "\n")
-
-print(response_json)
-
-
+# Define new data to create
 new_data = {
     "userID": 1,
     "id": 1,
